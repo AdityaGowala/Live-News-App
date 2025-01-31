@@ -1,0 +1,137 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: #007bff;  
+    color: white;
+    font-family: 'Roboto', sans-serif; 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo img {
+    height: 55px;
+    width: 55px;
+    object-fit: cover;
+    border-radius: 50%;
+   background-color: transparent;
+}
+
+.logo span {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+.search {
+    display: flex;
+    flex: 1;
+    margin: 0 3rem;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 8px 15px;
+    gap: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.search:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.search input {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 6px 12px;
+    border-radius: 25px;
+    width: 220px;
+    flex: 1;
+    transition: all 0.3s ease;
+}
+
+.search input:focus {
+    border-radius: 30px;
+    background-color: #f0f0f0;
+}
+
+.search-icon {
+    font-size: 1.6rem;
+    color: #007bff;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.search-icon:hover {
+    transform: scale(1.2);
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.links li {
+    position: relative;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.2s ease;
+}
+
+.links li:hover {
+    color: #ffd700;
+    transform: translateY(-3px);
+}
+
+.category-items{
+    position: absolute;
+    top: 35px;
+    right: 0;
+    background-color: whitesmoke;
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    border-radius: 15px;
+    width: 180px;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.category-items button{
+    display: block;
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    padding: 10px;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.category-items button:hover{
+    background-color: #007bff;
+    color: whitesmoke;
+}
+
+.category:hover{
+    .category-items{
+       visibility: visible;
+       opacity: 1;
+    }
+}
