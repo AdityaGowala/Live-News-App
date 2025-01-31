@@ -15,7 +15,3 @@ A dynamic news application built with React that fetches and displays real-time 
 - CSS
 - Slick Carousel
 
-## Setup
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/news-app.git
